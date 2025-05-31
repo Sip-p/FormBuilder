@@ -13,8 +13,8 @@
       
       {formId && (
         <div className="mt-2">
-          <p>Shareable Link: <strong>http://localhost:YourPort/fill/{formId}</strong></p>
-   
+          {/* <p>Shareable Link: <strong>http://localhost:YourPort/fill/{formId}</strong></p> */}
+   <p>Form ID:{formId}</p>
 
         </div>
       )}

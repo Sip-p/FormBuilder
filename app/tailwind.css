@@ -10,3 +10,18 @@ body {
     color-scheme: dark;
   }
 }
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: rgb(1, 1, 1);
+}
+
+body.dark-mode button {
+  background-color: #333; /* Dark gray for a sleek look */
+  color: #ffffff; /* White text for high contrast */
+  border: 1px solid #555; /* Subtle border for better definition */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+body.dark-mode button:hover {
+  background-color: #444; /* Slightly lighter on hover */
+}

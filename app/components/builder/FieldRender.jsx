@@ -61,7 +61,18 @@ const FieldRender = ({ fields }) => {
                 }}
               />
             )}
-
+{field.type === "radio" && field.options?.map((option, index) => (
+  <label key={index} className="flex items-center gap-2">
+    <input 
+      type="radio" 
+      name={field.id} 
+      value={option} 
+      checked={values[field.id] === option} 
+      onChange={(e) => updateFieldValue(field.id, e.target.value)} 
+    />
+    {option}
+  </label>
+))}
             
             {["text", "email", "number", "checkbox"].includes(field.type) && (
               <input

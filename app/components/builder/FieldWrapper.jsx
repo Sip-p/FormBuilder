@@ -53,6 +53,12 @@ const handleAddOption = () => {
   updateField(field.id, { options: [...currentOptions, newOption] });
 };
 
+// const handleAddOption = () => {
+//   const currentOptions = field.options || []; // Ensure field.options exists
+//   const newOption = `Option ${currentOptions.length + 1}`;
+  
+//   updateField(field.id, { options: [...currentOptions, newOption] });
+// };
   const handleRemoveOption = (index) => {
     const newOptions = field.options.filter((_, i) => i !== index);
     updateField(field.id, { options: newOptions });

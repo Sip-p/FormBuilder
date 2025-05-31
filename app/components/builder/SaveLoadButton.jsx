@@ -49,7 +49,7 @@ return (
         type="text"
         value={formId}
         onChange={(e) => setFormId(e.target.value)}
-        placeholder="Enter Form ID"
+        placeholder="Enter Form ID Only"
         className="border px-2 py-1 rounded"
       />
      <button

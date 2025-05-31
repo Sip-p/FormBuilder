@@ -13,8 +13,13 @@
       
       {formId && (
         <div className="mt-2">
-          <p>Shareable Link: <strong>http://localhost:5174/fill/{formId}</strong></p>
-           </div>
+          {/* <p>Shareable Link: <strong>http://localhost:5174/fill/{formId}</strong></p> */}
+<p>
+  Shareable Link:{" "}
+  <a href={`${window.location.origin}/fill/${formId}`} target="_blank" rel="noopener noreferrer">
+    {`${window.location.origin}/fill/${formId}`}
+  </a>
+</p>           </div>
       )}
     </div>
   );

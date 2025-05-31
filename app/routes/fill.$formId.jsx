@@ -57,7 +57,8 @@ export default function FillForm() {
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">{formName}</h2>
 
         {fields.length === 0 ? (
-          <p className="text-red-500 text-center">⚠ Form not found. Please check the ID.</p>
+          <p className="text-red-500 text-center">⚠  Wrong ID or Form not saved yet!! </p>
+          
         ) : (
           <>
             {/* ✅ Better Form Layout */}

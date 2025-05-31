@@ -26,8 +26,7 @@ const FieldPalette = () => {
     { type: "checkbox", label: "Checkbox" },
     { type: "radio", label: "Radio" },
     { type: "textarea", label: "Textarea" },
-    { type: "heading", label: "Heading" },
-    { type: "paragraph", label: "Paragraph" },
+     
   ];
 
   return (

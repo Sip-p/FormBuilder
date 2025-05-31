@@ -43,9 +43,9 @@ export default function FormList() {
                   <p className="font-semibold">📜 Form Name: {form.formName || "Untitled Form"}</p>
                   <p className="text-gray-600">🆔 Form ID: {formId}</p>
                   <p className="text-gray-600">📑 Fields: {form.fields.length}</p>
-                  <a href={`http://localhost:5174/fill/${formId}`} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
-                    🔗 Open Form
-                  </a>
+                  <a href={`${window.location.origin}/fill/${formId}`} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+  🔗 Open Form
+</a>
                 </div>
                 {/* ✅ Edit & Delete Buttons */}
                 <div className="space-x-2">

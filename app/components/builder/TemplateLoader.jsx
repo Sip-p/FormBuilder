@@ -1,7 +1,7 @@
  
 
 
-import { predefinedTemplates } from "./predefinedTemplates";
+import { predefinedTemplates } from "./PredefinedTemplates";
 import { useFormStore } from "../../state/formStore";
 
 const TemplateLoader = () => {
